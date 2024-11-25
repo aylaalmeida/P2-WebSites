@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Personagens - A Viagem de Chihiro</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+      <div class="header-content">
+        <h1>A Viagem de Chihiro</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="galeria.html">Galeria de Personagens</a></li>
+            <li><a href="outros_filmes.html">Mais Ghibli</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+        <section id="gallery" class="gallery">
+            <div class="character" onclick="showDetails('chihiro')">
+                <img src="/imagens/chihirogif2.webp" alt="Chihiro">
+                <h2>chihiro</h2><br>
+                <p>uma garota que descobre um mundo mágico</p>
+            </div>
+            <div class="character" onclick="showDetails('haku')">
+                <img src="/imagens/hakugif.webp" alt="Haku">
+                <h2>haku</h2><br>
+                <p>um espírito que ajuda chihiro em sua jornada</p>
+            </div>
+            <div class="character" onclick="showDetails('yubaba')">
+                <img src="/imagens/yubabagif.webp" alt="Yubaba">
+                <h2>yubaba</h2><br>
+                <p>a bruxa que controla o mundo mágico</p>
+            </div>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+    <section id="informacoes">
+      <p class="descricao">
+        <a href="mais_informacoes.html">clique aqui para saber mais sobre a nossa protagonista, chihiro! 𓏲๋࣭࣪˖🎐⋆｡🍥
+        </a>
+      </p>
+    </section>
+    <button id="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+    <script src="script2.js"></script>
+</body>
+</html>

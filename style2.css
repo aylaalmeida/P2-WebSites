@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: "Vollkorn", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+ /* header */
+ header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #003355;
+    color: #fff;
+    padding: 1rem 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+  #theme-toggle {
+    background-color: #003355;
+    color: white; 
+    border: none; 
+    padding: 0.5em 1em; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    position: fixed; 
+    bottom: 1rem; 
+    right: 1rem; } #theme-toggle:hover 
+    { background-color: #555; }
+
+main {
+    padding: 10em;
+}
+
+.gallery {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+}
+
+.character {
+    text-align: center;
+    cursor: pointer;
+}
+
+.character img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+
+/* GIF na parte inferior */
+#informacoes {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.gif-bottom {
+  width: 100%;
+  max-width: 500px; /* tamanho do GIF */
+  display: block;
+  margin: 0 auto;
+  border-radius: 3%;
+}
+
+/* texto abaixo do GIF */
+.descricao {
+  margin-top: 10px;  /* espaçamento entre o GIF e o texto */
+  font-size: 18px;
+}
+
+.descricao a {
+  text-decoration: none;
+  color: #333;
+}
+
+.descricao a:hover {
+  text-decoration: underline;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-theme header {
+    background-color: #1e1e1e;
+}
+
+body.dark-theme nav a {
+    color: #ffffff;
+}
+
+body.dark-theme #theme-toggle {
+    background-color: #333;
+}
+
+body.dark-theme .modal-content {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}

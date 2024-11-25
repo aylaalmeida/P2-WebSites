@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Ghibli - A Viagem de Chihiro</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>A Viagem de Chihiro</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Página Inicial</a></li>
+                    <li><a href="galeria.html">Galeria de Personagens</a></li>
+                    <li><a href="outros_filmes.html">Mais Ghibli</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="favorite-episodes">
+            <article class="episode">
+                <h2>Nausicaä do Vale do Vento (1984)</h2><br>
+                <img src="/imagens/nausicaa.webp" alt="Episódio 1 thumbnail">
+                <p>Diante da destruição dos recursos naturais de seu planeta, a princesa guerreira Nausicaa mobiliza seu povo contra o violento exército de uma rainha má.</p>
+                <button onclick="showTrailer('https://www.youtube.com/embed/6zhLBe319KE?si=rXQdhxrCBkWUBnFk')">Assistir ao Trailer</button>
+            </article>
+            <article class="episode">
+                <h2>Princesa Mononoke (1997)</h2><br>
+                <img src="/imagens/mononoke.webp" alt="Episódio 2 thumbnail">
+                <p>O filme conta a história de Ashitaka, um príncipe que é amaldiçoado após lutar com um demônio que invadiu sua aldeia. Para encontrar a cura, Ashitaka viaja para a floresta proibida, onde enfrenta animais fantásticos, princesas amaldiçoadas e os mistérios da natureza.</p>
+                <button onclick="showTrailer('https://www.youtube.com/embed/4OiMOHRDs14?si=l-EejnYjZnfx67eK')">Assistir ao Trailer</button>
+            </article>
+            <article class="episode">
+                <h2>O Castelo Animado (2004)</h2><br>
+                <img src="/imagens/castelo.webp" alt="Episódio 3 thumbnail">
+                <p>Uma bruxa lança uma terrível maldição sobre a jovem Sophie transformando-a em uma velha. Desesperada, ela embarca em uma odisseia em busca do mago Howl, um misterioso feiticeiro que pode ajudá-la a reverter o feitiço.</p>
+                <button onclick="showTrailer('https://www.youtube.com/embed/yhgzIgYMkOw?si=NHlloiCPPP_2SCO1')">Assistir ao Trailer</button>
+            </article>
+        </section>
+    </main>
+    <div id="trailer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="trailer-video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <button id="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+    <script src="script4.js"></script>
+</body>
+</html>
